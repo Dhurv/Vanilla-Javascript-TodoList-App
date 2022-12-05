@@ -55,9 +55,7 @@ function editTodo(val){
 }
 
 function marked(e) {
-    console.log(e.target)
     const value = e.target;
-    console.log(value)
     value.style.textDecoration = "line-through";
     value.style.opacity = "0.5"
 }
