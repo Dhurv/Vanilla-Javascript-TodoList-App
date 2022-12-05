@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-transform: uppercase;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.container{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.todos{
+    display: flex;
+    gap: .2rem;
+    align-self: center;
+}
+
+.todo-input{
+    border: none;
+    outline: none;
+    box-shadow: 0 0 .1px .4px black;
+    padding: .7rem;
+    width: 300px;
+    font-size: 17px;
+}
+
+.todoAddButton{
+    cursor: pointer;
+    box-shadow: 0 0 .1px .4px rgb(114, 109, 109);
+    border: none;
+    color: white;
+    background-color: rgb(114, 109, 109);
+    width: auto;
+    padding: .05rem .5rem;
+    font-size: 30px;
+}
+.todoAddButton:hover{
+    color:  rgb(114, 109, 109);
+    background-color:white;
+}
+
+.todoListUL{
+    list-style: none;
+    
+}
+
+/* this classes are defined inside javaScript*/
+
+.todoListDiv{
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    gap: 5px;
+    position: relative;
+    background-color: #eee;
+}
+
+.todoListLi{
+    font-size: 18px;
+    width: 300px;
+}
+
+.deleteTodoList,
+.editTodoList{
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    background-color: rgb(114, 109, 109);
+    border: none;
+    padding: 5px 3px;
+    margin: 1px;
+}
+
+.deleteTodoList{
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+}
+
+.editTodoList{
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    right: 30px;
+}
+.deleteTodoList:hover{
+    background-color:  rgb(199, 7, 7);
+    color:white;
+}
+.editTodoList:hover{
+    color:  white;
+    background-color:rgb(67, 211, 57);
+}
