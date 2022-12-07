@@ -64,6 +64,7 @@ h1{
 .todoListLi{
     font-size: 18px;
     width: 300px;
+    cursor: pointer;
 }
 
 .deleteTodoList,
